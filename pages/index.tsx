@@ -1,12 +1,20 @@
 import Head from 'next/head'
-
+import Link from 'next/link'
 export default function Home() {
+  const caca = async () => {
+    let res = await fetch('/api/hello')
+    console.log(await res.json())
+  }
+  caca()
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Link href={'/about'}>
+        <a className="font-bold underline">about</a>
+      </Link>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
