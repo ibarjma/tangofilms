@@ -100,8 +100,8 @@ export default function Title(props: any) {
         </div>
       </section>
 
-      <section className="h-full w-full bg-black text-white">
-        <div className="max-w-6xl">
+      <section className="flex h-full w-full items-center justify-center bg-black text-white">
+        <div className="w-full max-w-6xl">
           <h1 className="p-8 pb-4 pt-2 text-4xl font-light  md:text-5xl">
             dossier
           </h1>
