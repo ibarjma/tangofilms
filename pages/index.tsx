@@ -43,25 +43,21 @@ export default function Home() {
                 }}
               >
                 <div className="absolute flex h-full w-full items-center justify-between  py-4 sm:py-8	">
-                  <div className="m-1 cursor-pointer p-1	">
+                  <div className="m-2 cursor-pointer p-1	">
                     <Image
                       src={izq}
                       alt="Tango-films"
-                      width={30}
-                      height={30}
-                      blurDataURL="data:3."
-                      placeholder="blur"
+                      width={20}
+                      height={20}
                       draggable={false}
                     />
                   </div>
-                  <div className="m-1 cursor-pointer p-1	">
+                  <div className="m-2 cursor-pointer p-1	">
                     <Image
                       src={der}
                       alt="Tango-films"
-                      width={30}
-                      height={30}
-                      blurDataURL="data:3."
-                      placeholder="blur"
+                      width={20}
+                      height={20}
                       draggable={false}
                     />
                   </div>
@@ -74,8 +70,8 @@ export default function Home() {
                         alt="Tangofilms instagram"
                         width={30}
                         height={30}
-                        blurDataURL="data:3."
-                        placeholder="blur"
+                        // blurDataURL="data:3."
+                        // placeholder="blur"
                         draggable={false}
                       />
                     </div>
@@ -87,8 +83,8 @@ export default function Home() {
                         alt="Tangofilms facebook"
                         width={30}
                         height={30}
-                        blurDataURL="data:3."
-                        placeholder="blur"
+                        // blurDataURL="data:3."
+                        // placeholder="blur"
                         draggable={false}
                       />
                     </div>
