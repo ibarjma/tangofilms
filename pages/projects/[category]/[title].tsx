@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import DossierCarousel from './../../../components/DossierCarousel'
 // import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 
 // export const getServerSideProps: GetServerSideProps = async (context) => {
@@ -100,11 +101,14 @@ export default function Title(props: any) {
         </div>
       </section>
 
-      <section className="flex h-full w-full items-center justify-center bg-black text-white">
+      <section className="flex h-full w-full flex-col items-center justify-center bg-black text-white">
         <div className="w-full max-w-6xl">
           <h1 className="p-8 pb-4 pt-2 text-4xl font-light  md:text-5xl">
             dossier
           </h1>
+        </div>
+        <div className="my-8 flex h-full w-full items-center justify-center">
+          <DossierCarousel></DossierCarousel>
         </div>
       </section>
     </>
