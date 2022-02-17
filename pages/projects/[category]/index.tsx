@@ -17,7 +17,7 @@ export default function Category(props: any) {
 
   return (
     <>
-      <section className="my-8 mb-4 h-full w-full bg-white pt-16">
+      <section className="mb-4 h-full w-full bg-white pt-16">
         <div className="flex h-full w-full items-center justify-center  text-black">
           <div className="w-full max-w-6xl">
             <h1 className=" flex justify-center text-4xl font-bold">
