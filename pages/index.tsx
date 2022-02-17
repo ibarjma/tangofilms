@@ -8,11 +8,7 @@ import instagram from './../public/instagram.svg'
 import izq from './../public/izq.svg'
 import der from './../public/der.svg'
 
-const images = [
-  'https://unsplash.com/photos/1527pjeb6jg/download?force=true&w=640',
-  'https://unsplash.com/photos/9wg5jCEPBsw/download?force=true&w=640',
-  'https://unsplash.com/photos/phIFdC6lA4E/download?force=true&w=640',
-]
+const images = ['/home/0.png', '/home/1.png', '/home/2.png']
 
 export default function Home() {
   // const caca = async () => {

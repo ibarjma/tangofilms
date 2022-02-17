@@ -1,3 +1,21 @@
 .h-ful {
   height: 100vh;
 }
+
+@font-face {
+  font-family: 'SourceSans';
+  src: local('SourceSans'),
+    url('./../public/fonts/SourceSansVariable-Roman.otf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'SourceCode';
+  src: local('SourceCode'),
+    url('./../public/fonts/SourceCodeVariable-Roman.otf') format('truetype');
+  font-weight: normal;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: 'SourceSans';
+}

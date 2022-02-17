@@ -14,6 +14,17 @@ export default function Navbar() {
     setPath(router.pathname)
   }, [router.pathname])
 
+  // const handleBlanco = () => {
+  //   if (
+  //     path === '/' ||
+  //     path === '/about' ||
+  //     path === '/projects/[category]/[title]'
+  //   ) {
+  //     return true
+  //   } else {
+  //     return false
+  //   }
+  // }
   const [shown, setShown] = useState(false)
 
   const [shown2, setShown2] = useState(false)
@@ -67,7 +78,13 @@ export default function Navbar() {
         <div className="m-1 w-24 cursor-pointer p-1	sm:w-32">
           <Link href={'/'}>
             <Image
-              src={path === '/' || path === '/about' ? logoW : logoB}
+              src={
+                path === '/' ||
+                path === '/about' ||
+                path === '/projects/[category]/[title]'
+                  ? logoW
+                  : logoB
+              }
               alt="Tango-films"
               // blurDataURL="data:3."
               // placeholder="blur"
@@ -84,7 +101,13 @@ export default function Navbar() {
         }}
       >
         <Hamburger
-          color={path === '/' || path === '/about' ? '#fff' : '#000'}
+          color={
+            path === '/' ||
+            path === '/about' ||
+            path === '/projects/[category]/[title]'
+              ? '#fff'
+              : '#000'
+          }
           label="Show menu"
           toggled={shown}
           toggle={setShown}
