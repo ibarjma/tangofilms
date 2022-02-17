@@ -63,8 +63,8 @@ export default function Navbar() {
       style={shown ? { height: '99.9vh' } : { height: '0.1vh' }}
       className={`fixed z-20 flex  w-full justify-between`}
     >
-      <div className="m-8  mt-6 h-max ">
-        <div className="m-1 w-32 cursor-pointer	p-1">
+      <div className="m-3 h-max  sm:m-8 sm:mt-6 ">
+        <div className="m-1 w-24 cursor-pointer p-1	sm:w-32">
           <Link href={'/'}>
             <Image
               src={path === '/' || path === '/about' ? logoW : logoB}
@@ -77,7 +77,7 @@ export default function Navbar() {
         </div>
       </div>
       <motion.section
-        className=" m-8 mb-0 "
+        className=" m-3 mb-0 sm:m-8"
         onHoverStart={() => setShown(true)}
         onClick={() => {
           shown === true ? setShown(false) : setShown(true)
@@ -94,7 +94,7 @@ export default function Navbar() {
           variants={showMenu}
           initial="exit"
           animate={shown ? 'enter' : 'exit'}
-          className="border-blue-strong absolute left-0 top-0 -z-10 flex h-full w-full flex-col items-start justify-center bg-black bg-opacity-50 bg-cover p-8 pl-16 text-3xl text-white"
+          className="border-blue-strong absolute left-0 top-0 -z-10 flex h-full w-full flex-col items-start justify-center bg-black bg-opacity-50 bg-cover p-8 text-lg text-white sm:pl-16 sm:text-3xl"
           transition={{ duration: 0.75 }}
         >
           <Link href="/">
@@ -133,7 +133,7 @@ export default function Navbar() {
             variants={showMenu2}
             initial="exit"
             animate={shown2 ? 'enter' : 'exit'}
-            className="border-blue-strong relative ml-2 flex h-auto w-full flex-col items-start justify-center border border-l border-t-0 border-r-0 border-b-0 p-2 pl-4 text-3xl text-white"
+            className="border-blue-strong relative ml-2 flex h-auto w-full flex-col items-start justify-center border border-l border-t-0 border-r-0 border-b-0 p-2 pl-4 text-lg text-white sm:text-3xl"
             transition={{ duration: 0.75 }}
           >
             <Link href="/projects/feature-films">

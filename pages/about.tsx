@@ -11,14 +11,14 @@ export default function About({}) {
       >
         <div className="flex h-full w-full items-end justify-start p-8 ">
           <div className="text-left sm:p-4">
-            <h1 className="text-5xl font-semibold uppercase text-white md:text-6xl">
+            <h1 className="text-3xl font-semibold uppercase text-white sm:text-5xl md:text-6xl">
               About <span className="font-extralight ">us</span>
             </h1>
             {/* <button className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white transition-all hover:bg-blue-500 focus:bg-blue-500 focus:outline-none">
               Start project
              </button> */}
 
-            <p className="w-3/4 py-4 text-white">
+            <p className="w-3/4 py-4 text-sm text-white sm:text-base">
               TANGO FILMS fue creada por Diego Conejero y Juampi Lasserre en
               20XX. Nuestras metas son{' '}
               <span className="font-semibold">
@@ -152,7 +152,11 @@ export default function About({}) {
                   seeds@farolatam.com
                 </h2>
 
-                <img src="tango2.png" className="w-1/3 py-8 pb-2" alt="" />
+                <img
+                  src="tango2.png"
+                  className="w-40 py-8 pb-6 sm:w-1/3 sm:pb-2"
+                  alt=""
+                />
               </div>
             </section>
           </div>
