@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
+// import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 import Link from 'next/link'
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  let res = await fetch('http://localhost:3000/api/hello')
+// export const getServerSideProps: GetServerSideProps = async (context) => {
+//   let res = await fetch('http://localhost:3000/api/hello')
 
-  const posts = await res.json()
+//   const posts = await res.json()
 
-  return {
-    props: { posts }, // will be passed to the page component as props
-  }
-}
+//   return {
+//     props: { posts }, // will be passed to the page component as props
+//   }
+// }
 
 export default function Category(props: any) {
   const [posts, setPosts] = useState(props.posts)
