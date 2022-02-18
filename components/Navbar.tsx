@@ -25,6 +25,11 @@ export default function Navbar() {
   //     return false
   //   }
   // }
+
+  const handleSubMenu = (e: any) => {
+    e.stopPropagation()
+    shown2 === true ? setShown2(false) : setShown2(true)
+  }
   const [shown, setShown] = useState(false)
 
   const [shown2, setShown2] = useState(false)
@@ -124,8 +129,7 @@ export default function Navbar() {
             <motion.li
               whileHover={{
                 color: '#d2d8d8',
-                x: 2,
-                textDecoration: 'underline',
+                x: 4,
               }}
               transition={{ duration: 0.2 }}
               className="z-20 cursor-pointer p-1 font-light uppercase italic text-white"
@@ -137,14 +141,13 @@ export default function Navbar() {
           <motion.li
             whileHover={{
               color: '#d2d8d8',
-              x: 2,
-              textDecoration: 'underline',
+              x: 4,
             }}
             transition={{ duration: 0.72 }}
             className="z-20 cursor-pointer p-1 font-light uppercase italic text-white"
             onHoverStart={() => setShown2(true)}
-            onClick={() => {
-              shown2 === true ? setShown2(false) : setShown2(true)
+            onClick={(e) => {
+              handleSubMenu(e)
             }}
           >
             projects
@@ -163,8 +166,7 @@ export default function Navbar() {
               <motion.li
                 whileHover={{
                   color: '#d2d8d8',
-                  x: 2,
-                  textDecoration: 'underline',
+                  x: 4,
                 }}
                 transition={{ duration: 0.2 }}
                 className="z-20 cursor-pointer p-1 font-light capitalize italic text-white"
@@ -177,8 +179,7 @@ export default function Navbar() {
               <motion.li
                 whileHover={{
                   color: '#d2d8d8',
-                  x: 2,
-                  textDecoration: 'underline',
+                  x: 4,
                 }}
                 transition={{ duration: 0.2 }}
                 className="z-20 cursor-pointer p-1 font-light capitalize italic text-white"
@@ -191,8 +192,7 @@ export default function Navbar() {
               <motion.li
                 whileHover={{
                   color: '#d2d8d8',
-                  x: 2,
-                  textDecoration: 'underline',
+                  x: 4,
                 }}
                 transition={{ duration: 0.2 }}
                 className="z-20 cursor-pointer p-1 font-light capitalize italic text-white"
@@ -204,8 +204,7 @@ export default function Navbar() {
               <motion.li
                 whileHover={{
                   color: '#d2d8d8',
-                  x: 2,
-                  textDecoration: 'underline',
+                  x: 4,
                 }}
                 transition={{ duration: 0.2 }}
                 className="z-20 cursor-pointer p-1 font-light capitalize italic text-white"
@@ -221,8 +220,7 @@ export default function Navbar() {
             <motion.li
               whileHover={{
                 color: '#d2d8d8',
-                x: 2,
-                textDecoration: 'underline',
+                x: 4,
               }}
               transition={{ duration: 0.2 }}
               className="z-20 cursor-pointer p-1 font-light uppercase italic text-white"

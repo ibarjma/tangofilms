@@ -46,7 +46,7 @@ export default function Category(props: any) {
             </div>
             <Link href={'/projects/category/title'}>
               <button className="text-md m-2 my-4 w-28 border border-white bg-transparent px-4 py-2 pb-4 text-xl font-extralight italic text-white transition-all hover:border-white hover:bg-black  focus:outline-none sm:m-4 sm:w-40 sm:text-3xl">
-                wach
+                watch
               </button>
             </Link>
           </div>
@@ -69,7 +69,7 @@ export default function Category(props: any) {
             </div>
             <Link href={'/projects/category/title'}>
               <button className="text-md m-2 my-4 w-28 border border-white bg-transparent px-4 py-2 pb-4 text-xl font-extralight italic text-white transition-all hover:border-white hover:bg-black  focus:outline-none sm:m-4 sm:w-40 sm:text-3xl">
-                wach
+                watch
               </button>
             </Link>
           </div>
@@ -92,7 +92,7 @@ export default function Category(props: any) {
             </div>
             <Link href={'/projects/category/title'}>
               <button className="text-md m-2 my-4 w-28 border border-white bg-transparent px-4 py-2 pb-4 text-xl font-extralight italic text-white transition-all hover:border-white hover:bg-black  focus:outline-none sm:m-4 sm:w-40 sm:text-3xl">
-                wach
+                watch
               </button>
             </Link>
           </div>
@@ -115,7 +115,7 @@ export default function Category(props: any) {
             </div>
             <Link href={'/projects/category/title'}>
               <button className="text-md m-2 my-4 w-28 border border-white bg-transparent px-4 py-2 pb-4 text-xl font-extralight italic text-white transition-all hover:border-white hover:bg-black  focus:outline-none sm:m-4 sm:w-40 sm:text-3xl">
-                wach
+                watch
               </button>
             </Link>
           </div>

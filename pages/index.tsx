@@ -7,6 +7,7 @@ import facebook from './../public/facebook.svg'
 import instagram from './../public/instagram.svg'
 import izq from './../public/izq.svg'
 import der from './../public/der.svg'
+import Router from 'next/router'
 
 const images = ['/home/0.png', '/home/1.png', '/home/2.png']
 
@@ -59,7 +60,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="absolute mx-2 flex h-full items-end justify-start py-4 sm:mx-4 sm:py-8">
-                  <Link href={'https://instagram.com/tangofilmsla'}>
+                  <a
+                    target={'_blank'}
+                    href={'https://instagram.com/tangofilmsla'}
+                  >
                     <div className="m-1 cursor-pointer p-1 ">
                       <Image
                         src={instagram}
@@ -71,8 +75,8 @@ export default function Home() {
                         draggable={false}
                       />
                     </div>
-                  </Link>
-                  <Link href={'https://facebook.com/tangofilms'}>
+                  </a>
+                  <a target={'_blank'} href={'https://facebook.com/tangofilms'}>
                     <div className="m-1 cursor-pointer p-1">
                       <Image
                         src={facebook}
@@ -84,7 +88,7 @@ export default function Home() {
                         draggable={false}
                       />
                     </div>
-                  </Link>
+                  </a>
                 </div>
                 <div className="mx-2 flex h-full flex-col items-end justify-end py-4 sm:mx-4 sm:py-8">
                   {images.map((value, index) => {

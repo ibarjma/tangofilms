@@ -120,20 +120,32 @@ export default function About({}) {
               </h1>
               <div className="flex flex-wrap pt-2 sm:mx-28">
                 <div className="flex w-full flex-col items-center justify-center py-8 sm:w-1/2">
-                  <p className="w-full p-1 px-2 text-sm font-semibold uppercase">
-                    ren biagiola
-                  </p>
-                  <p className="w-full p-1 px-2 text-sm uppercase">
-                    rbiagiola@farolatam.com
-                  </p>
+                  <a
+                    className="cursor-pointer"
+                    target={'_blank'}
+                    href="mailto:rbiagiola@farolatam.com"
+                  >
+                    <p className="w-full p-1 px-2 text-sm font-semibold uppercase">
+                      ren biagiola
+                    </p>
+                    <p className="w-full p-1 px-2 text-sm uppercase">
+                      rbiagiola@farolatam.com
+                    </p>
+                  </a>
                 </div>
                 <div className="flex w-full flex-col items-center justify-center py-8 sm:w-1/2">
-                  <p className="w-full p-1 px-2 text-sm font-semibold uppercase">
-                    josé maría landi
-                  </p>
-                  <p className="w-full p-1 px-2 text-sm uppercase">
-                    jlandi@farolatam.com
-                  </p>
+                  <a
+                    className="cursor-pointer"
+                    target={'_blank'}
+                    href="mailto:jlandi@farolatam.com"
+                  >
+                    <p className="w-full p-1 px-2 text-sm font-semibold uppercase">
+                      josé maría landi
+                    </p>
+                    <p className="w-full p-1 px-2 text-sm uppercase">
+                      jlandi@farolatam.com
+                    </p>
+                  </a>
                 </div>
               </div>
             </section>
@@ -147,10 +159,14 @@ export default function About({}) {
                   got an idea?{' '}
                   <span className="font-semibold"> send your seed</span>
                 </h1>
-
-                <h2 className="p-4 text-lg font-semibold uppercase sm:text-xl">
-                  seeds@farolatam.com
-                </h2>
+                <a
+                  target={'_blank'}
+                  href="mailto:seeds@farolatam.com?body=My idea for a project is..."
+                >
+                  <h2 className="p-4 text-lg font-semibold uppercase sm:text-xl">
+                    seeds@farolatam.com
+                  </h2>
+                </a>
 
                 <img
                   src="tango2.png"
