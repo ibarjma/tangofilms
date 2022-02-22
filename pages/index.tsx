@@ -1,5 +1,4 @@
 // import Head from 'next/head'
-import Link from 'next/link'
 import { VirtualizedPage } from '../components/VirtualPages'
 import Image from 'next/image'
 // import { useState, useEffect } from 'react'
@@ -7,7 +6,6 @@ import facebook from './../public/facebook.svg'
 import instagram from './../public/instagram.svg'
 import izq from './../public/izq.svg'
 import der from './../public/der.svg'
-import Router from 'next/router'
 
 const images = ['/home/0.png', '/home/1.png', '/home/2.png']
 
@@ -61,6 +59,7 @@ export default function Home() {
                 </div>
                 <div className="absolute mx-2 flex h-full items-end justify-start py-4 sm:mx-4 sm:py-8">
                   <a
+                    className="hover:animate-bounce"
                     target={'_blank'}
                     href={'https://instagram.com/tangofilmsla'}
                   >
@@ -76,7 +75,11 @@ export default function Home() {
                       />
                     </div>
                   </a>
-                  <a target={'_blank'} href={'https://facebook.com/tangofilms'}>
+                  <a
+                    className="transition-all hover:animate-bounce"
+                    target={'_blank'}
+                    href={'https://facebook.com/tangofilms'}
+                  >
                     <div className="m-1 cursor-pointer p-1">
                       <Image
                         src={facebook}
@@ -90,14 +93,14 @@ export default function Home() {
                     </div>
                   </a>
                 </div>
-                <div className="mx-2 flex h-full flex-col items-end justify-end py-4 sm:mx-4 sm:py-8">
+                <div className="mx-2 flex h-full items-end justify-end py-4 sm:mx-4 sm:py-8">
                   {images.map((value, index) => {
                     return (
                       <div
                         onClick={() => {
                           console.log('asd')
                         }}
-                        className={`m-1 h-4  w-4 rounded-full ${
+                        className={`m-1 mb-4 h-4  w-4 rounded-full ${
                           imageIndex === index || imageIndex > index
                             ? 'bg-white'
                             : 'border border-white'

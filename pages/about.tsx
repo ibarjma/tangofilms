@@ -167,12 +167,17 @@ export default function About({}) {
                     seeds@farolatam.com
                   </h2>
                 </a>
-
-                <img
-                  src="tango2.png"
-                  className="w-40 py-8 pb-6 sm:w-1/3 sm:pb-2"
-                  alt=""
-                />
+                <a
+                  className="flex justify-center"
+                  target={'_blank'}
+                  href="https://faroholding.com"
+                >
+                  <img
+                    src="tango2.png"
+                    className="w-40 py-8 pb-6 sm:w-1/3 sm:pb-2"
+                    alt=""
+                  />
+                </a>
               </div>
             </section>
           </div>

@@ -27,7 +27,7 @@ const transition: AnimationOptions<any> = {
   bounce: 0,
 }
 
-const delay = 4
+const delay = 6
 
 export const VirtualizedPage: React.FunctionComponent<VirtualizedPageProps> = ({
   children,
