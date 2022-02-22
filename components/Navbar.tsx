@@ -212,6 +212,19 @@ export default function Navbar() {
                 documentary
               </motion.li>
             </Link>
+
+            <motion.li
+              whileHover={{
+                color: '#d2d8d8',
+                x: 4,
+              }}
+              transition={{ duration: 0.2 }}
+              className="z-20 cursor-pointer p-1 font-light capitalize italic text-white"
+            >
+              <a target={'_blank'} href="https://80daysfilms.com">
+                commercials
+              </a>
+            </motion.li>
           </motion.ul>
 
           {/* end submenu */}
