@@ -37,10 +37,10 @@ export default function Title(props: any) {
           <div className="w-full max-w-6xl">
             <div className="flex flex-wrap">
               <div className="w-full sm:w-7/12">
-                <h2 className="px-8 pt-8 pb-1 text-xl font-light uppercase sm:text-xl">
+                <h2 className="s-light px-8 pt-8 pb-1 text-xl uppercase sm:text-xl">
                   pre producción
                 </h2>
-                <h1 className="p-8 pb-4 pt-2 text-4xl font-semibold uppercase md:text-5xl">
+                <h1 className="p-8 pb-4 pt-2 text-4xl font-semibold uppercase tracking-wide md:text-5xl">
                   carthago
                 </h1>
                 <p className="p-8">
@@ -55,30 +55,33 @@ export default function Title(props: any) {
                   conseguir aquello que más desea.
                 </p>
                 <div className="p-8 pt-4">
-                  <p className="py-2 font-semibold uppercase">
+                  <p className="py-2 font-semibold uppercase  tracking-wide">
                     Estreno:{' '}
                     <span className="font-light normal-case">
                       14 de septiembre 2017
                     </span>
                   </p>
-                  <p className="py-2 font-semibold uppercase">
+                  <p className="py-2 font-semibold uppercase  tracking-wide">
                     Duración:{' '}
                     <span className="font-light normal-case">95 minutos</span>
                   </p>
-                  <p className="py-2 font-semibold uppercase">
+                  <p className="py-2 font-semibold uppercase  tracking-wide">
                     Formato: <span className="font-light normal-case">4k</span>
                   </p>
                 </div>
               </div>
-              <div className="w-full divide-y divide-white py-12 px-8 sm:w-5/12 sm:pl-0">
+              <div className="w-full py-12 px-8  sm:w-5/12 sm:pl-0">
                 <div className="flex flex-col p-4">
                   <h1 className="text-md  font-semibold  ">Dirigida por</h1>
                   <p className="text-md  font-light  ">Diego Lerman</p>
                 </div>
+                <div className="m-4 w-1/12 border border-t-0 border-l-0 border-r-0 border-white"></div>
                 <div className="flex flex-col p-4">
                   <h1 className="text-md  font-semibold  ">Producida por</h1>
                   <p className="text-md  font-light  ">Campo cine</p>
                 </div>
+                <div className="m-4 w-1/12 border border-t-0 border-l-0 border-r-0 border-white"></div>
+
                 <div className="flex flex-col p-4">
                   <h1 className="text-md  font-semibold  ">
                     En coproducción con
@@ -89,6 +92,8 @@ export default function Title(props: any) {
                     -Telefe (Argentina) ACT3 (Dinamarca) - Snowglobe (Dinamarca)
                   </p>
                 </div>
+                <div className="m-4 w-1/12 border border-t-0 border-l-0 border-r-0 border-white"></div>
+
                 <div className="flex flex-col p-4">
                   <h1 className="text-md  font-semibold  ">
                     Ventas internacionales
@@ -101,13 +106,13 @@ export default function Title(props: any) {
         </div>
       </section>
 
-      <section className="flex h-full w-full flex-col items-center justify-center bg-black text-white">
+      <section className="flex h-full w-full flex-col items-center justify-center bg-black text-white ">
         <div className="w-full max-w-6xl">
-          <h1 className="p-8 pb-4 pt-2 text-4xl font-light  md:text-5xl">
+          <h1 className="p-8 pb-1 pt-2 text-4xl font-light  md:text-5xl">
             dossier
           </h1>
         </div>
-        <div className="my-8 flex h-full w-full items-center justify-center">
+        <div className="my-8 flex h-full w-full max-w-6xl items-center justify-center p-8">
           <DossierCarousel></DossierCarousel>
         </div>
       </section>

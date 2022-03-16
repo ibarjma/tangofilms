@@ -1,25 +1,49 @@
+@font-face {
+  font-family: 'Source Sans';
+  src: url('./../public/fonts/SourceSansPro-Regular.ttf');
+}
+@font-face {
+  font-family: 'Source Sans Bold';
+  src: url('./../public/fonts/SourceSansPro-Bold.ttf');
+}
+@font-face {
+  font-family: 'Source Sans Semibold';
+  src: url('./../public/fonts/SourceSansPro-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Source Sans Light';
+  src: url('./../public/fonts/SourceSansPro-Light.ttf');
+}
+@font-face {
+  font-family: 'Source Sans Extralight';
+  src: url('./../public/fonts/SourceSansPro-ExtraLight.ttf');
+}
+
+html {
+  font-family: 'Source Sans';
+  overflow-x: hidden;
+}
+
+.s-bold {
+  font-family: 'Source Sans Bold';
+}
+.s-semibold {
+  font-family: 'Source Sans Semibold';
+}
+.s-light {
+  font-family: 'Source Sans Light';
+}
+.s-extralight {
+  font-family: 'Source Sans Extralight';
+}
+.s-regular {
+  font-family: 'Source Sans';
+}
 .h-ful {
   height: 100vh;
 }
 
-@font-face {
-  font-family: 'SourceSans';
-  src: local('SourceSans'),
-    url('./../public/fonts/SourceSansVariable-Roman.otf') format('truetype');
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'SourceCode';
-  src: local('SourceCode'),
-    url('./../public/fonts/SourceCodeVariable-Roman.otf') format('truetype');
-  font-weight: normal;
-}
-
-html {
-  overflow-x: hidden;
-  font-family: 'SourceSans';
-}
-
 .w {
-  width: 52% !important;
+  width: 55% !important;
 }

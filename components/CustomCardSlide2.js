@@ -22,9 +22,6 @@ const CustomCardSlide2 = ({ index, ...cardProps }) => (
           height: '260px',
           display: 'flex',
           alignItems: 'center',
-          border: 'solid',
-          borderColor: 'white',
-          borderRadius: '0.15rem',
           width: '90%',
           margin: '0.5rem',
         }}

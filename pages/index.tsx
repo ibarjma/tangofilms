@@ -38,7 +38,7 @@ export default function Home() {
                 }}
               >
                 <div className="absolute flex h-full w-full items-center justify-between  py-4 sm:py-8	">
-                  <div className="m-2 cursor-pointer p-1	">
+                  <div className="m-2 cursor-pointer p-1 sm:m-4	">
                     <Image
                       src={izq}
                       alt="Tango-films"
@@ -47,7 +47,7 @@ export default function Home() {
                       draggable={false}
                     />
                   </div>
-                  <div className="m-2 cursor-pointer p-1	">
+                  <div className="m-2 cursor-pointer p-1 sm:m-4	">
                     <Image
                       src={der}
                       alt="Tango-films"
@@ -93,7 +93,7 @@ export default function Home() {
                     </div>
                   </a>
                 </div>
-                <div className="mx-2 flex h-full items-end justify-end py-4 sm:mx-4 sm:py-8">
+                <div className="mx-4 flex h-full items-end justify-end py-4 sm:mx-6 sm:py-8">
                   {images.map((value, index) => {
                     return (
                       <div

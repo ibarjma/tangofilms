@@ -33,18 +33,13 @@ export default function CardCarousel2() {
       isPlaying={false}
       isIntrinsicHeight={true}
       totalSlides={marcas.length}
-      style={
-        innerWidth < 410
-          ? { width: '83%', display: 'flex', overflow: 'hidden' }
-          : innerWidth < 470
-          ? { width: '85%', display: 'flex', overflow: 'hidden' }
-          : innerWidth < 540
-          ? { width: '85%', display: 'flex', overflow: 'hidden' }
-          : innerWidth < 614
-          ? { width: '90%', display: 'flex', overflow: 'hidden' }
-          : { width: '87%', display: 'flex', overflow: 'hidden' }
-      }
-      visibleSlides={innerWidth < 539 ? 1 : innerWidth < 1023 ? 2 : 3}
+      style={{
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        overflowX: 'hidden',
+      }}
+      visibleSlides={innerWidth < 767 ? 1 : innerWidth < 1023 ? 2 : 3}
     >
       <ButtonBack className="z-20 text-4xl">{'<'}</ButtonBack>
       <Slider>
