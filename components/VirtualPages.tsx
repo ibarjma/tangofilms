@@ -8,6 +8,7 @@ import {
   useMotionValue,
 } from 'framer-motion'
 import { Page } from './Page'
+import ThemeContext from '../contexts/blurContext'
 
 const range = [-1, 0, 1]
 
@@ -32,6 +33,7 @@ const delay = 6
 export const VirtualizedPage: React.FunctionComponent<VirtualizedPageProps> = ({
   children,
 }) => {
+  const { dark } = React.useContext(ThemeContext)
   // callback event to fire the index change
   const [index, setIndex] = React.useState(0)
   React.useEffect(() => {

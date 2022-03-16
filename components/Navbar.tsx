@@ -3,11 +3,17 @@ import logoW from './../public/tango-white.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Slant as Hamburger } from 'hamburger-react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
+import ThemeContext from '../contexts/blurContext'
 
 export default function Navbar() {
+  const { dark, toggleDark } = useContext(ThemeContext)
+  const handleOnClick = (e: boolean) => {
+    toggleDark(e)
+  }
+
   const router = useRouter()
   const [path, setPath] = useState('/')
   useEffect(() => {
@@ -29,6 +35,21 @@ export default function Navbar() {
   const handleSubMenu = (e: any) => {
     e.stopPropagation()
     shown2 === true ? setShown2(false) : setShown2(true)
+  }
+
+  const handleShown = (bool: boolean) => {
+    if (bool === true) {
+      let node = document.getElementsByClassName('hamburger-react')[0]
+        .childNodes[1] as HTMLElement
+      node.classList.remove('w')
+    } else {
+      let node = document.getElementsByClassName('hamburger-react')[0]
+        .childNodes[1] as HTMLElement
+      node.classList.add('w')
+    }
+
+    setShown(bool)
+    handleOnClick(bool)
   }
   const [shown, setShown] = useState(false)
 
@@ -100,9 +121,9 @@ export default function Navbar() {
       </div>
       <motion.section
         className=" m-3 mb-0 sm:m-8"
-        onHoverStart={() => setShown(true)}
+        onHoverStart={() => handleShown(true)}
         onClick={() => {
-          shown === true ? setShown(false) : setShown(true)
+          shown === true ? handleShown(false) : handleShown(true)
         }}
       >
         <Hamburger
@@ -122,7 +143,7 @@ export default function Navbar() {
           variants={showMenu}
           initial="exit"
           animate={shown ? 'enter' : 'exit'}
-          className="border-blue-strong absolute left-0 top-0 -z-10 flex h-full w-full flex-col items-start justify-center bg-black bg-opacity-50 bg-cover p-8 text-lg text-white sm:pl-16 sm:text-3xl"
+          className="border-blue-strong absolute left-0 top-0 -z-10 flex h-full w-full flex-col items-start justify-center  bg-cover p-8 text-lg text-white sm:pl-16 sm:text-3xl"
           transition={{ duration: 0.75 }}
         >
           <Link href="/">
